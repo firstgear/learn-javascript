@@ -1,4 +1,4 @@
-# Learning Plan JavaScript during COVID-19
+# Learning JavaScript during COVID-19
 
 ## [01 - JavaScript Basics](./01-js-basics.md)
 
