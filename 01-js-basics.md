@@ -177,7 +177,7 @@ greet();
 ```
 
 Function with 1 input
-- paramter vs argument
+- parameter vs argument
 ```javascript
 function greet2(name) { // one parameter
     console.log('Hello ' + name);
@@ -185,6 +185,8 @@ function greet2(name) { // one parameter
 }
 greet2('Josje'); // Josje is argument of greet function.
 ```
+
+### Types of Function
 
 Function with multiple inputs
 ```javascript
