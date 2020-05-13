@@ -4,8 +4,8 @@
 
 |                   | Min  | Logged      |
 |-------------------|------|-------------|
-| Getting Started   | 17   |             |
-| Basics            | 40   |             |
+| Getting Started   | 17   | 12 may |
+| Basics            | 40   | 13 may |
 | Operators         | 35   |             |
 | Control Flow      | 85   |             |
 | Objects           | 80   |             |
