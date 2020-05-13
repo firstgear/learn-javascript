@@ -1,14 +1,15 @@
 # JS Basics
 
-## Getting Started (17m)
+## Getting Started
 
-[What is JS?](https://codewithmosh.com/courses/324741/lectures/5088148)
+### What is JS?
+- JS most popular programming language (68% of devs use JS). Source: [StackOverflow Survey 2019 to 25k developers](https://insights.stackoverflow.com/survey/2019#technology)
+- JS has broad community and vendor support.
 
-[4th State of JS survey - salary](https://2019.stateofjs.com/demographics/#salary)
-
-[StackOverFlow survey 2019 - salary by language](https://insights.stackoverflow.com/survey/2019#top-paying-technologies)
-
-[StackOverFlow survey 2019 - salary by developer type](https://insights.stackoverflow.com/survey/2019#technology)
+Average salary
+- [Yearly salary in USD](https://2019.stateofjs.com/demographics/#salary) by 4th State of JS survey
+- [Salary by language](https://insights.stackoverflow.com/survey/2019#top-paying-technologies) by StackOverFlow Survey 2019
+- [Salary by developer type](https://insights.stackoverflow.com/survey/2019#technology) by StackOverFlow Survey 2019
 
 JS is dynamically typed, means types can change at runtime.
 ```javascript
@@ -28,7 +29,7 @@ JS initially only supported in browsers. Today you can build
 JS runs in engine
 - FireFox uses SpiderMonkey
 - Chrome uses v8
-- Node
+- Node, runs outside browser
 
 JS vs ECMAScript
 - ECMAScript = specification
@@ -44,8 +45,10 @@ console.log('Hello world');
 alert('yo');
 ```
 
-IDE
-- Atem
+### Setting up the Development Environment
+
+Install IDE
+- Atom
 - Sublime Text
 - vscode
   - Generate basic html boilerplate: ! - TAB
@@ -54,9 +57,12 @@ IDE
   - Comment out line through Command + /
   - Move block of text through Option + Up/Down
 
+Install node
 ```bash
 $ brew install node
 ```
+
+### JavaScript in Browsers
 
 \<script> element
 - can be placed in head or body
@@ -65,6 +71,17 @@ $ brew install node
 
 \\\ Description or comment
 - explain why/how, not what
+
+### Seperation of Concerns
+
+- HTML all about content
+- JavaScript to implement behavior
+
+### Execute JavaScript in Node
+
+```bash
+$ node index.js
+```
 
 ## Basics - Declare variables and functions (40m)
 
@@ -75,7 +92,7 @@ $ brew install node
 * Cannot contain a space or hyphen (-)
 * Are case sensitive
 
-Define string through let
+Define string through let (use let as of ECMA version 6)
 ```javascript
 let name;
 console.log(name);

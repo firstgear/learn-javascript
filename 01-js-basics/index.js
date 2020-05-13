@@ -290,6 +290,6 @@ console.log(countThruthy(array)); // => 2
 //
 
 function sum(limit){
-    let sum = 
-    if (limit%3 || limit%5) 
+    let sum = 0;
+    if (limit%3 || limit%5);
 }
