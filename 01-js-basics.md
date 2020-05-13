@@ -11,16 +11,6 @@ Average salary
 - [Salary by language](https://insights.stackoverflow.com/survey/2019#top-paying-technologies) by StackOverFlow Survey 2019
 - [Salary by developer type](https://insights.stackoverflow.com/survey/2019#technology) by StackOverFlow Survey 2019
 
-JS is dynamically typed, means types can change at runtime.
-```javascript
-let myvar = 1;
-typeof myvar;
-myvar = 'Toyota';
-typeof myvar;
-myvar = ["Saab", "Volvo", "BMW"];
-typeof myvar;
-```
-
 JS initially only supported in browsers. Today you can build
 - web/mobile apps
 - real-time networking app (chat, video)
@@ -86,15 +76,16 @@ $ node index.js
 ## Basics - Declare variables and functions (40m)
 
 ### Variables
-* Reserved keywords in JS: if, var
+* Cannot use reserved keywords such as if, var
 * Should be meaningful
 * Cannot start with a number
 * Cannot contain a space or hyphen (-)
 * Are case sensitive
+* Use camel notation (eg. firstName)
 
 Define string through let (use let as of ECMA version 6)
 ```javascript
-let name;
+let name; //undefined is default type
 console.log(name);
 ```
 
@@ -104,7 +95,7 @@ let name='Josje';
 console.log(name);
 ```
 
-Define multiple variables
+Define multiple variables, one per line
 ```javascript
 let firstName = 'Josje';
 let lastName = 'Huisman';
@@ -113,6 +104,7 @@ let lastName = 'Huisman';
 ### Define constant (cannot re-assign)
 ```javascript
 const interestRate = 0.3;
+interestRate = 1; // Error
 console.log(interestRate);
 ```
 
@@ -136,7 +128,19 @@ typeof age; // Dynamic typing
 "number"
 ```
 
-Reference Types
+### Dynamic Typing
+
+JS is dynamically typed, means types can change at runtime.
+```javascript
+let myvar = 1;
+typeof myvar;
+myvar = 'Toyota';
+typeof myvar;
+myvar = ["Saab", "Volvo", "BMW"];
+typeof myvar;
+```
+
+### Reference Types
 * Object
 * Array
 * Function
