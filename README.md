@@ -6,7 +6,7 @@
 |-------------------|------|--------|
 | Getting Started   | 17   | 12 may |
 | Basics            | 40   | 13 may |
-| Operators         | 35   |             |
+| Operators         | 35   | 14 may |
 | Control Flow      | 85   |             |
 | Objects           | 80   |             |
 | Arrays            | 90   |             |

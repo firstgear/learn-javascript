@@ -212,6 +212,7 @@ Type of operators
 - [Arithmetic](#arithmetic)
 - [Assignment](#assignment)
 - [Comparison](#comparison)
+- [Ternary](#ternary)
 - [Logical](#logical)
 - [Bitwise](#bitwise)
 
@@ -267,13 +268,15 @@ console.log(x === 1);
 console.log(x !== 1);
 ```
 
-Double Equals = Lose (value, converts type)
+Double Equals = Loose (value, converts type)
 ```javascript
 console.log(x == 1);
 console.log(x != 1);
 ```
 
-### Ternary (or conditional) operators
+### Ternary 
+
+- aka conditional operators
 
 ```javascript
 // If a customer has more than 100 points,
@@ -312,38 +315,35 @@ console.log('Application Refused', !eligibleForLoan );
 - Anything else is truthy
 
 ```javascript
-console.log( false || true );
-console.log( false || 'Josje' );
-console.log( false || 1 );
-console.log( false || 1 || 2 ); // short-circuiting
+console.log( false || true );     // true
+console.log( false || 'Josje' );  // Josje
+console.log( false || 1 );        // 1
+console.log( false || 1 || 2 );   // short-circuiting 1
 
+// if user selects a color then use userColor, otherwise defaultColor
 let userColor = 'red';
 let defaultColor = 'blue';
 let currentColor = userColor || defaultColor;
-console.log( currentColor );
+console.log( currentColor );      
 ```
 
 ### Bitwise
-- 1 = 0000 0001
-- 2 = 0000 0010
-- 3 = 0000 0011
 
 ```javascript
-console.log(1 | 2); // Bitwise OR (logical OR double ||)
+console.log(1 | 2); // Bitwise OR (logical OR double ||) 
 console.log(1 & 2); // Bitwise AND (logical AND double &&)
 ```
 
-Implement Access Control
-- Read, Write, Execute
-- 00000 100
-- 00000 010
-- 00000 001
+Implement Access Control via octal notation
+
+- use OR to add permissions
+- use AND to check permissions
 
 ```javascript
-const readPermission = 4;
-const writePermission = 2;
-const executePermission = 1;
-let myPermission = 0;
+const readPermission = 4;    // 100
+const writePermission = 2;   // 010
+const executePermission = 1; // 001
+let myPermission = 0;        // 000
 myPermission = myPermission | readPermission | writePermission;
 console.log(myPermission); // => 6
 
@@ -351,6 +351,17 @@ let message =
     (myPermission & readPermission) ? 'yes' : 'no';
 console.log(message);
 ```
+
+| Permission              | rwx | Binary | # |
+|-------------------------|-----|--------|---|
+| read, write and execute | rwx | 111    | 7 |
+| read and write          | rw  | 110    | 6 | 
+| read and execute        | r-x | 101    | 5 | 
+| read only               | r-- | 100    | 4 |
+| write and execute       | -wx | 011    | 3 | 
+| write only              | -w- | 010    | 2 |
+| execute only            | --x | 001    | 1 | 
+| none                    | --- | 000    | 0 | 
 
 ### Operators Precedence
 
