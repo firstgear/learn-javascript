@@ -227,8 +227,8 @@ console.log(x / y); // divider
 console.log(x % y); // remainder of division
 console.log(x ** y); // exponentiation
 
-console.log(++x); // increment
-console.log(x++); // increment
+console.log(++x); // increment, apply operator first, then log x + 1
+console.log(x++); // increment, logs x and apply operator
 console.log(--y); // decrement
 console.log(y--); // decrement
 ```
