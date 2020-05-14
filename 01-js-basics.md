@@ -209,11 +209,11 @@ console.log(square(2)); // function passed as argument
 Used to create expressions to implement logic and algorithms
 
 Type of operators
-- Arithmetic
-- Assignment
-- Comparison
-- Logical
-- Bitwise
+- [Arithmetic](#arithmetic)
+- [Assignment](#assignment)
+- [Comparison](#comparison)
+- [Logical](#logical)
+- [Bitwise](#bitwise)
 
 ### Arithmetic
 
@@ -244,7 +244,9 @@ console.log(x *= 5); // multiply assignment operator
 console.log(x /= 5); // divide assignment operator
 ```
 
-### Comparison (output boolean)
+### Comparison
+
+- output boolean
 
 Relation
 ```javascript
@@ -255,7 +257,9 @@ console.log(x < 0); // less than
 console.log(x <= 0); // less than or equal to
 ```
 
-### Equality (output boolean) operators
+### Equality
+
+- output boolean
 
 Triple Equals = Strict (type + value)
 ```javascript
@@ -279,7 +283,7 @@ let points = 110;
 let type = points > 100 ? 'gold' : 'silver'
 ```
 
-### Logical Operators
+### Logical
 
 ```javascript
 // logical AND (&&)
@@ -319,7 +323,7 @@ let currentColor = userColor || defaultColor;
 console.log( currentColor );
 ```
 
-### Bitwise operators
+### Bitwise
 - 1 = 0000 0001
 - 2 = 0000 0010
 - 3 = 0000 0011

@@ -2,8 +2,8 @@
 
 ## [01 - JavaScript Basics](./01-js-basics.md)
 
-|                   | Min  | Logged      |
-|-------------------|------|-------------|
+|                   | Min  | Done   |
+|-------------------|------|--------|
 | Getting Started   | 17   | 12 may |
 | Basics            | 40   | 13 may |
 | Operators         | 35   |             |
