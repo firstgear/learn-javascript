@@ -11,10 +11,10 @@ function checkSpeed (speed){
     return "Points " + Math.floor(points);
 }
 
-console.log(checkSpeed(70)); => Ok
-console.log(checkSpeed(71)); => Points 0
-console.log(checkSpeed(75)); => Points 1
-console.log(checkSpeed(80)); => Points 2
-console.log(checkSpeed(25)); => Ok
-console.log(checkSpeed(130)); => Points 12
-console.log(checkSpeed(180)); License suspended.
+console.log(checkSpeed(70)); // Ok
+console.log(checkSpeed(71)); // Points 0
+console.log(checkSpeed(75)); // Points 1
+console.log(checkSpeed(80)); // Points 2
+console.log(checkSpeed(25)); // Ok
+console.log(checkSpeed(130)); // Points 12
+console.log(checkSpeed(180)); // License suspended.
