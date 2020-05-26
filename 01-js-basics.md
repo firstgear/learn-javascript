@@ -382,11 +382,34 @@ console.log(a);
 console.log(b);
 ```
 
-## Control Flow (1h25m)
+## Control Flow
+
+- [if...else](#if...else)
+- [switch...case](#switch...case)
+- [for](#for)
+- [while](#while)
+- [do...while](#do...while)
+- [infinite...loops](#infinite...loops)
+- [for...in](#for...in)
+- [for...of](#for...of)
+- [break...continue](#break...continue)
 
 ### if...else
 
 ```javascript
+//generic structure
+if (condition){
+    statement
+}
+elseif if (anotherCondition){
+    statement
+}
+elseif if (yetAnotherCondition){
+    statement
+}
+else
+    statement
+
 // Hour
 // If hour is between 6am and 12pm: Good morning !
 // If it is between 12pm and 6pm: Good afternoon !
@@ -444,7 +467,8 @@ while (i <= 5) {
 }
 ```
 
-### do...while (not often used, more for/while loops)
+### do...while
+- not often used, more for/while loops
 - at least executed once, even if condition evaluates false
 ```javascript
 // display odd numbers
@@ -502,7 +526,7 @@ for (let color of colors)
     console.log(color);
 ```
 
-### break and continue
+### break...continue
 - applies to all kind of loops
 
 ```javascript
