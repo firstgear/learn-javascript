@@ -655,11 +655,10 @@ console.log(countThruthy(array)); // => 2
 ```
 
 ### Exercise 7 - [String Properties](./01-js-basics/exercises/control-flow-07.js)
-
 ### Exercise 8 - [Sum of Multiples of 3 and 5](./01-js-basics/exercises/control-flow-08.js)
 ### Exercise 9 - [Grade](./01-js-basics/exercises/control-flow-09.js)
 ### Exercise 10 - [Stars](./01-js-basics/exercises/control-flow-10.js)
 ### Exercise 11 - [Prime Numbers](./01-js-basics/exercises/control-flow-11.js)
 
 
-## Objects
+## Control Flow
