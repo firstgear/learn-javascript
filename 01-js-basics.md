@@ -204,7 +204,7 @@ function square(number) {
 console.log(square(2)); // function passed as argument
 ```
 
-## Operators (35m)
+## Operators
 
 Used to create expressions to implement logic and algorithms
 
@@ -660,3 +660,6 @@ console.log(countThruthy(array)); // => 2
 ### Exercise 9 - [Grade](./01-js-basics/exercises/control-flow-09.js)
 ### Exercise 10 - [Stars](./01-js-basics/exercises/control-flow-10.js)
 ### Exercise 11 - [Prime Numbers](./01-js-basics/exercises/control-flow-11.js)
+
+
+## Objects
