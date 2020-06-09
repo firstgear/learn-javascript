@@ -661,4 +661,4 @@ console.log(countThruthy(array)); // => 2
 ### Exercise 11 - [Prime Numbers](./01-js-basics/exercises/control-flow-11.js)
 
 
-## Control Flow
+## Objects
