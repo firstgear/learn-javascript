@@ -665,7 +665,11 @@ console.log(countThruthy(array)); // => 2
 
 ### Basics
 
+Object oriented programming style
+- Encapsulate or group related variables in object
+- Functions in objects are called methods
 
+Not OOP
 ```javascript
 let radius = 1;
 let x = 1;
@@ -674,7 +678,7 @@ function draw() {}
 function move() {}
 ```
 
-OOP: Encapsulate or group related variables in object
+OOP: in object literal style
 ```javascript
 const circle = {
     radius: 1,
@@ -690,3 +694,39 @@ const circle = {
 
 circle.draw(); //Method
 ```
+
+### Factory Functions
+
+OOP: factory function
+```javascript
+//Factory Function
+function createCircle(radius, ){
+    return {
+        radius, // if key:value are same
+        draw(){ // draw method
+            console.log('draw');
+        }
+    };
+}
+const circle1 = createCircle(1);
+console.log(circle1);
+```
+### Constructor Functions
+
+OOP: constructor function
+```javascript
+// Constructor Function
+function Circle(radius) {
+    this.radius = radius; //new property to empty object
+    this.draw = function() {
+        console.log('draw');
+    }
+    return this; // implicitly there
+}
+
+// similar to C# or Java (new operator)
+const circle = new Circle(1); // new creates empty object eg. const x = {};
+```
+
+### Dynamic Nature of Objects
+
