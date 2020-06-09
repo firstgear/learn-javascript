@@ -17,4 +17,3 @@ function isPrime ( integer ) {
         if (!(integer % factor)) return false;
     return true;
 }
-
