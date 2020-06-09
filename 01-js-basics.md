@@ -145,7 +145,7 @@ typeof myvar;
 * Array
 * Function
 
-### Objects
+### Object type
 - Curly braces to define properties
 - Dot notation shorter
 - Bracket notation: if you only know name of target property at runtime
@@ -158,7 +158,7 @@ person.name='Josje'; //dot notation
 person['name']='Hanne'; //bracket notation
 ```
 
-### Array
+### Array type
 - Every element has an index (starts with 0)
 - Use index to access element in array
 ```javascript
@@ -167,7 +167,7 @@ console.log(selectedColors);
 console.log(selectedColors[0]);
 ```
 
-### Function performing task
+### Function performing task type
 ```javascript
 function greet() { // function declaration, no semicolon required
     console.log('Hello World');
