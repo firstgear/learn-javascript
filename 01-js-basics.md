@@ -73,7 +73,7 @@ $ brew install node
 $ node index.js
 ```
 
-## Basics - Declare variables and functions (40m)
+## Basics
 
 ### Variables
 * Cannot use reserved keywords such as if, var
