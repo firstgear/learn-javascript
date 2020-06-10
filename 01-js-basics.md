@@ -766,4 +766,10 @@ JS has automatic memory allocation, called garbage collection. No need to alloca
 
 ### [Math](./01-js-basics/examples/objects-11.js)
 
-[Built in Math Object - link to Mozilla dev portal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+[Built in Math Object - Mozilla dev portal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+
+### [String](./01-js-basics/examples/objects-12.js)
+
+[Built in String Object - Mozilla dev portal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+### [Template Literals](./01-js-basics/examples/objects-13.js)
