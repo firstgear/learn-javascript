@@ -1,4 +1,4 @@
-// cloning an objects
+// cloning an object
 const circle = {
     radius: 1,
     draw() {
