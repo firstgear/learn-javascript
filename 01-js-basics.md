@@ -760,3 +760,7 @@ Reference types or objects are copies by their reference
 
 ### [Cloning an object](./01-js-basics/examples/objects-09.js)
 
+### [Garbage Collection](./01-js-basics/examples/objects-10.js)
+
+JS has automatic memory allocation, called garbage collection. No need to allocate memory to object as in C/C++.
+
