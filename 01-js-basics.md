@@ -773,3 +773,5 @@ JS has automatic memory allocation, called garbage collection. No need to alloca
 [Built in String Object - Mozilla dev portal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ### [Template Literals](./01-js-basics/examples/objects-13.js)
+
+### [Date](./01-js-basics/examples/objects-14.js)
