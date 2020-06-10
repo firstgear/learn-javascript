@@ -756,3 +756,6 @@ Reference Types
 Primitives or value types are copies by their value
 Reference types or objects are copies by their reference
 
+### [Enumerating Properties of an Object](./01-js-basics/examples/objects-08.js)
+
+### [Cloning an object](./01-js-basics/examples/objects-09.js)
