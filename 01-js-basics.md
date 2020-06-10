@@ -764,3 +764,6 @@ Reference types or objects are copies by their reference
 
 JS has automatic memory allocation, called garbage collection. No need to allocate memory to object as in C/C++.
 
+### [Math](./01-js-basics/examples/objects-11.js)
+
+[Built in Math Object - link to Mozilla dev portal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
