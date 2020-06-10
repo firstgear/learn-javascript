@@ -728,5 +728,6 @@ function Circle(radius) {
 const circle = new Circle(1); // new creates empty object eg. const x = {};
 ```
 
-### Dynamic Nature of Objects
+### [Dynamic Nature of Objects](./01-js-basics/examples/objects-04.js)
 
+You can always add or remove properties from existing objects.
