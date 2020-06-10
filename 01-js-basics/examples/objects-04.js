@@ -1,3 +1,5 @@
+//dynamic nature of objects
+
 const circle = {
     radius: 1
 };

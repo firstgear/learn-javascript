@@ -731,3 +731,25 @@ const circle = new Circle(1); // new creates empty object eg. const x = {};
 ### [Dynamic Nature of Objects](./01-js-basics/examples/objects-04.js)
 
 You can always add or remove properties from existing objects.
+
+### [Constructor Property](./01-js-basics/examples/objects-05.js)
+
+Every object in JS has property called constructor (object.constructor), references function that is used to create that object.
+
+### [Functions are Objects](./01-js-basics/examples/objects-06.js)
+
+### [Value vs Reference Types](./01-js-basics/examples/objects-07.js)
+
+Value types aka primitives
+- Number
+- String
+- Boolean
+- Symbol (new since ES6)
+- undefined
+- null
+
+Reference Types
+- Object
+- Function
+- Array
+
