@@ -753,3 +753,6 @@ Reference Types
 - Function
 - Array
 
+Primitives or value types are copies by their value
+Reference types or objects are copies by their reference
+
