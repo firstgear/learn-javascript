@@ -7,9 +7,19 @@
 - JS has broad community and vendor support.
 
 Average salary
+- [120k$/Y in US for typescript](https://insights.stackoverflow.com/survey/2020) by StackOverFlow Survey 2020
 - [Yearly salary in USD](https://2019.stateofjs.com/demographics/#salary) by 4th State of JS survey
 - [Salary by language](https://insights.stackoverflow.com/survey/2019#top-paying-technologies) by StackOverFlow Survey 2019
 - [Salary by developer type](https://insights.stackoverflow.com/survey/2019#technology) by StackOverFlow Survey 2019
+
+[State of Frontend in 2020](https://tsh.io/State-of-Frontend-2020-by-TSH.pdf)
+- 74% using React
+- Hosting: AWS, Netflify, GCP, Azure, Vercel
+- Static website generators: Gatsby, Next.js
+
+[BOOK - Building Micro-Frontends by Luca Mezzalira](https://www.oreilly.com/library/view/building-micro-frontends/9781492082989/)
+
+[BOOK - Front End Developer Handbook](https://frontendmasters.com/books/front-end-handbook/2019/)
 
 JS initially only supported in browsers. Today you can build
 - web/mobile apps
@@ -42,7 +52,7 @@ Install IDE
 - Sublime Text
 - vscode
   - Generate basic html boilerplate: ! - TAB
-  - Install extension live server
+  - Install extension live server: CMD or ALT + L + O
   - Access terminal through Control + \`
   - Comment out line through Command + /
   - Move block of text through Option + Up/Down
@@ -700,7 +710,7 @@ circle.draw(); //Method
 OOP: factory function
 ```javascript
 //Factory Function
-function createCircle(radius, ){
+function createCircle(radius){
     return {
         radius, // if key:value are same
         draw(){ // draw method
@@ -710,8 +720,13 @@ function createCircle(radius, ){
 }
 const circle1 = createCircle(1);
 console.log(circle1);
+
+const circle2 = createCircle(2);
+console.log(circle2);
 ```
 ### Constructor Functions
+
+Goal is to create an object
 
 OOP: constructor function
 ```javascript
@@ -721,22 +736,51 @@ function Circle(radius) {
     this.draw = function() {
         console.log('draw');
     }
-    return this; // implicitly there
+    return this; // explicitly there
 }
 
 // similar to C# or Java (new operator)
-const circle = new Circle(1); // new creates empty object eg. const x = {};
+const circle = new Circle(1); // new creates object
+// new String, Object, Boolean = object constructor notation
+// 1, "", {}, true = object literal notation
 ```
+
 
 ### [Dynamic Nature of Objects](./01-js-basics/examples/objects-04.js)
 
-You can always add or remove properties from existing objects.
+Dynamic means, you can always add or remove properties from existing objects.
+
+```javascript
+//dynamic nature of objects
+const circle = {
+    radius: 1
+};
+
+circle.color = 'yellow';
+circle.draw = function() {}
+
+delete circle.color;
+delete circle.draw;
+
+console.log(circle);
+```
 
 ### [Constructor Property](./01-js-basics/examples/objects-05.js)
 
 Every object in JS has property called constructor (object.constructor), references function that is used to create that object.
+```javascript
+// object literal syntax => object.constructor function
+let x = {};
+let y = new Object();
+
+new String(); // '', "", ``
+new Boolean(); // true, false
+new Number(); // 1, 2, 3, ...
+```
 
 ### [Functions are Objects](./01-js-basics/examples/objects-06.js)
+
+
 
 ### [Value vs Reference Types](./01-js-basics/examples/objects-07.js)
 
@@ -760,6 +804,8 @@ Reference types or objects are copies by their reference
 
 ### [Cloning an object](./01-js-basics/examples/objects-09.js)
 
+Iterate over all properties including methods in object to copy them to new object.
+
 ### [Garbage Collection](./01-js-basics/examples/objects-10.js)
 
 JS has automatic memory allocation, called garbage collection. No need to allocate memory to object as in C/C++.
@@ -770,7 +816,8 @@ JS has automatic memory allocation, called garbage collection. No need to alloca
 
 ### [String](./01-js-basics/examples/objects-12.js)
 
-[Built in String Object - Mozilla dev portal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+* [Built in String Object - Mozilla dev portal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+* [Escape Notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Escape_notation)
 
 ### [Template Literals](./01-js-basics/examples/objects-13.js)
 

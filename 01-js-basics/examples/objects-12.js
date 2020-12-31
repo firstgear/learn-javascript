@@ -25,13 +25,16 @@ console.log(message.endsWith('.'));
 console.log(message.indexOf('my'));
 // 8
 console.log(message.replace('first','second'));
-// 'This is my second message.' - Returns new string, does not change original string.
+// 'This is my second message.' 
+// Returns new string, does not change original string.
+
 console.log(message.toUpperCase());
 // THIS IS ...
 console.log(message.trim());
 // gets rid of all whitespace before and after.
 
 // escape notation
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Escape_notation
 // eg. single quote inside the string (\')
 console.log('This is my \' first message.');
 

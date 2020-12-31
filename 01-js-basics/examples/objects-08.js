@@ -12,11 +12,15 @@ for (let key in circle)
     console.log(key, circle[key]);
 
 // for of loop (maps, arrays)
+// object is not iterable circle. => error use Object.keys
 for (let key of Object.keys(circle))
     console.log(key, circle[key]);
-// Object is built-in constructor function
+// every Object is with built-in constructor function
 // function Object() {}
+// access properties and methods through dot notation (Object.)
+
 // methods: keys or entries
+// each entry is an array
 for (let entry of Object.entries(circle))
     console.log(entry);
 

@@ -1,5 +1,5 @@
 //Factory Function
-function createCircle(radius, ){
+function createCircle(radius){
     return {
         radius, // if key:value are same
         draw(){ // draw method
@@ -9,3 +9,6 @@ function createCircle(radius, ){
 }
 const circle1 = createCircle(1);
 console.log(circle1);
+
+const circle2 = createCircle(2);
+console.log(circle2);

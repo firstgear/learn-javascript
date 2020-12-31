@@ -12,4 +12,7 @@ function Circle(radius) {
 
 // similar to C# or Java (new operator)
 const circle = new Circle(1); // new creates empty object eg. const x = {};
+// new .... = object constructor notation
+// 1, "", {} = object literal notation
+
 circle.draw();

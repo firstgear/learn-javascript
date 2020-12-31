@@ -9,9 +9,9 @@ function Circle(radius) {
 const another = new Circle(1);
 
 // Go to dev console
-// Circle.name
-// Circle.length
-// Circle.constructor
+// Circle.name (name)
+// Circle.length (# of arguments)
+// Circle.constructor (function used to crate object, who created?)
 
 const Circle1 = new Function('radius', `
 this.radius = radius;
@@ -23,4 +23,4 @@ this.draw = function() {
 const circle = new Circle1(1);
 
 Circle.call(window, 1); // window is target of this
-Circle.apply({}, [1,2,3]);
+Circle.apply({}, [1,2,3]); // pass array as second argument
