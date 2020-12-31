@@ -8,7 +8,7 @@
 | [Basics](01-js-basics.md#Basics)                   | 40   | 13 may |
 | [Operators](01-js-basics.md#Operators)             | 35   | 14 may |
 | [Control Flow](01-js-basics.md#Control-Flow)       | 85   | 26 may |
-| [Objects](01-js-basics.md#Objects)                 | 80   |        |
+| [Objects](01-js-basics.md#Objects)                 | 80   | 31 dec |
 | Arrays            | 90   |             |
 | Functions         | 65   |             |
 |                   | 412  |             |
