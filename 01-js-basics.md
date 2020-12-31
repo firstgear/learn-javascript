@@ -824,3 +824,187 @@ JS has automatic memory allocation, called garbage collection. No need to alloca
 ### [Date](./01-js-basics/examples/objects-14.js)
 
 [Built in Date object - Mozilla dev portal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+
+## Arrays
+
+### Adding Elements
+
+```javascript
+const numbers = [3, 4];
+//numbers = []; //error, but  you can add or remove elements
+
+// 3 methods to add elements
+numbers.push(5, 6); // end
+numbers.unshift(1, 2); // begin
+numbers.splice(2, 0, 'a', 'b'); //middle
+
+console.log(numbers);
+// [1, 2, "a", "b", 3, 4, 5, 6]
+```
+
+### Finding Elements (Primitives)
+
+```javascript
+const numbers = [1, 2, 3, 1, 4];
+console.log(numbers.indexOf('a'));     // -1 -> not found
+console.log(numbers.indexOf(1));       //  0
+console.log(numbers.indexOf('1'));     // -1 -> not found
+console.log(numbers.lastIndexOf(1));   //  3
+
+// to check whether element exists use !== -1
+console.log(numbers.indexOf(1) !== -1);//  true
+console.log(numbers.includes(1));      //  true
+```
+
+### Finding Elements (Reference Types)
+
+```javascript
+const courses = [
+    { id: 1, name: 'a' },
+    { id: 2, name: 'b' },
+]
+
+// do we have course called 'a' ?
+console.log(courses.includes({ id: 1, name: 'a' })); // false
+
+// have to pass function, called predicate or callback function
+const course = courses.find( function(course) {
+    return course.name === 'a';
+}); 
+console.log(course); // { id ... } or undefined
+
+// using findIndex
+const course2 = courses.findIndex( function(course) {
+    return course.name === 'a';
+}); 
+console.log(course2); // 0
+```
+
+### Arrow Functions
+
+```javascript
+// have to pass function, called predicate or callback function
+const course1 = courses.find( function(course) {
+    return course.name === 'a';
+}); 
+console.log(course1); // { id: 1, name: 'a' } or undefined
+
+// remove function keyword en replace with fat arrow =>
+const course2 = courses.find( course => {
+    return course.name === 'a';
+}); 
+console.log(course2); // { id ... } or undefined
+
+// remove curly braces
+const course3 = courses.find( course => course.name === 'a'); 
+console.log(course3); // { id ... } or undefined
+```
+
+### Removing Elements
+
+```javascript
+const numbers = [1,2,3,4];
+
+const last = numbers.pop() // remove last element
+const begin = numbers.shift() // remove first element
+numbers.splice(1,1); // remove 1 element starting on on index 1
+```
+
+### Emptying an Array
+
+```javascript
+let numbers = [1, 2, 3, 4];
+let another = numbers;
+
+// Solution 1
+numbers = []; // elegant, but doesn't work with multiple reference to array
+console.log(numbers);
+
+// Solution 2
+numbers.length = 0;
+console.log(numbers);
+
+// Solution 3
+numbers.splice(0, numbers.length);
+console.log(numbers);
+
+// Solution 4
+while (numbers.length>0)
+    numbers.pop();
+console.log(numbers);
+```
+
+### Combining and Slicing Arrays
+
+```javascript
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+const combined = first.concat(second); // [1, 2, 3, 4, 5, 6]
+
+// primitives will be copied
+// objects references will be copied
+
+const firstN = [ {id :1 }];
+const secondN = [4, 5, 6];
+const combinedN = firstN.concat(secondN); // [{id :1 }, 4, 5, 6]
+firstN[0].id = 10;
+console.log(combinedN); //  [{id :10 }, 4, 5, 6]
+```
+
+### The Spread Operator
+
+```javascript
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+
+const combined = [...first, ...second];
+console.log(combined); // [1, 2, 3, 4, 5, 6]
+```
+
+### Iterating an Array
+
+```javascript
+const numbers = [1, 2, 3];
+for (let number of numbers)
+    console.log(number);
+
+numbers.forEach( function(number){
+    console.log(number);
+});
+
+//callback passed to forEach function
+numbers.forEach(number => console.log(number));
+
+//callback can take 2nd parameter, index
+numbers.forEach((number, index) => console.log(index, number));
+```
+
+### Joining Arrays
+
+```javascript
+const numbers = [1, 2, 3]; // array
+const joined = numbers.join(','); //creates a string
+console.log(joined);
+
+// similar split can create array from string
+```
+
+### Sorting Arrays
+
+```javascript
+const numbers = [2, 3, 1];
+numbers.sort();
+console.log(numbers); // [1, 2, 3]
+```
+
+### Testing the Elements of an Array
+### Filtering an Array
+### Mapping an Array
+### Reducing an Array
+### Exercise 1- Array from Range
+### Exercise 2- Includes
+### Exercise 3- Except
+### Exercise 4- Moving an Element
+### Exercise 5- Count Occurrences
+### Exercise 6- Get Max
+### Exercise 7- Movies
