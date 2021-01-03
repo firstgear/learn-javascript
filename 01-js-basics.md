@@ -1035,20 +1035,40 @@ eg. sum of array
 
 ## Functions
 
-### Function Declarations vs Expressions (3:18)
-### Hoisting (1:56)
-### Arguments (4:15)
-### The Rest Operator (4:38)
-### Default Parameters (3:40)
-### Getters and Setters (5:38)
-### Try and Catch (5:35)
-### Local vs Global Scope (4:44)
-### Let vs Var (5:52)
-### The this Keyword (7:22)
-### Changing this (7:00)
+### Function Declarations vs Expressions
 
-### Exercise 1- Sum of Arguments (3:42)
-### Exercise 2- Area of Circle (1:53)
-### Exercise 3- Error Handling (2:49)
+* Function Declaration
+* Anonymous Function Expression
+* Named Function Expression
+
+### Hoisting
+
+Voving function declaration to top of the file happens automatically in JS for function declarations. Not for function expressions.
+
+### Arguments
+
+Use argument object inside function to use dynamic number of parameters.
+
+### The Rest Operator
+
+Rest operator (...args) must be the last formal parameter and is NOT the spread operator used with arrays [...array].
+
+### Default Parameters
+
+Create default parameters with the OR (||) operator.
+
+### Getters and Setters
+
+
+
+### Try and Catch
+### Local vs Global Scope
+### Let vs Var
+### The this Keyword
+### Changing this
+
+### Exercise 1- Sum of Arguments
+### Exercise 2- Area of Circle
+### Exercise 3- Error Handling
 ### Wrap Up
 ### What's Next
