@@ -17,6 +17,6 @@ console.log(slice);
 const firstN = [ {id :1 }];
 const secondN = [4, 5, 6];
 
-const combinedN = firstN.concat(secondN); // [1, 2, 3, 4, 5, 6]
+const combinedN = firstN.concat(secondN); // [{id :1 }, 4, 5, 6]
 firstN[0].id = 10;
 console.log(combinedN);

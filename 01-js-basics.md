@@ -56,6 +56,7 @@ Install IDE
   - Access terminal through Control + \`
   - Comment out line through Command + /
   - Move block of text through Option + Up/Down
+  - Change variable in multiple places: F2
 
 Install node
 ```bash
@@ -154,6 +155,11 @@ typeof myvar;
 * Object
 * Array
 * Function
+
+### Brackets used in JS (added)
+* {} objects: braces, curly braces, curle brackets, accolade (NL)
+* [] arrays: brackets, square brackets, rechte haakjes (NL)
+* () code grouping, immediately invoked, gives precedence in math calc: round brackets, parenthesis, ronde haakjes (NL)
 
 ### Object type
 - Curly braces to define properties
@@ -998,9 +1004,27 @@ console.log(numbers); // [1, 2, 3]
 ```
 
 ### Testing the Elements of an Array
+
+Pass callback function to method array.some() or array.every().
+
 ### Filtering an Array
+
+Pass callback function to method array.filter().
+
+eg. Yelp restaurant filter on "Open Now"
+
 ### Mapping an Array
+
+Pass callback function to method array.map() to map every element of array into something else.
+
+eg. html bullet points from array
+
 ### Reducing an Array
+
+Pass callback funtion to method array.reduce() including reduce algorithm using accumulator and currentValue.
+
+eg. sum of array
+
 ### Exercise 1- Array from Range
 ### Exercise 2- Includes
 ### Exercise 3- Except
