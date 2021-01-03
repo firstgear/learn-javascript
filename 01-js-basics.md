@@ -1032,3 +1032,23 @@ eg. sum of array
 ### Exercise 5- Count Occurrences
 ### Exercise 6- Get Max
 ### Exercise 7- Movies
+
+## Functions
+
+### Function Declarations vs Expressions (3:18)
+### Hoisting (1:56)
+### Arguments (4:15)
+### The Rest Operator (4:38)
+### Default Parameters (3:40)
+### Getters and Setters (5:38)
+### Try and Catch (5:35)
+### Local vs Global Scope (4:44)
+### Let vs Var (5:52)
+### The this Keyword (7:22)
+### Changing this (7:00)
+
+### Exercise 1- Sum of Arguments (3:42)
+### Exercise 2- Area of Circle (1:53)
+### Exercise 3- Error Handling (2:49)
+### Wrap Up
+### What's Next

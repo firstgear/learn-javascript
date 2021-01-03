@@ -9,8 +9,8 @@
 | [Operators](01-js-basics.md#Operators)             | 35   | 14 may |
 | [Control Flow](01-js-basics.md#Control-Flow)       | 85   | 26 may |
 | [Objects](01-js-basics.md#Objects)                 | 80   | 31 dec |
-| [Arrays](01-js-basics.md#Arrays)                   | 90   |        |
-| Functions         | 65   |             |
+| [Arrays](01-js-basics.md#Arrays)                   | 90   | 3 jan  | 
+| [Functions](01-js-basics.md#Functions)             | 65   | |
 |                   | 412  |             |
 
 ## Object Oriented Programming in Javascript
