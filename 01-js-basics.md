@@ -1,4 +1,4 @@
-# JS Basics
+# JS Basics - Part 1
 
 ## Getting Started
 
