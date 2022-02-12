@@ -26,9 +26,16 @@
 - [] square brackets, brackets, rechte haakjes (NL)
 - () round brackets, parenthesis, ronde haakjes (NL)
 
-### Commits
+### Standard commit commit
 
 - git status
-- git add -A / git commit -a
+- git add -A // stages all changes
 - git commit -m 'message'
 - git push
+
+### Revert latest commit
+
+- git reset HEAD~
+- git add . // stages new files without deletions
+- git commit -c ORIG_HEAD
+- git push origin master --force
