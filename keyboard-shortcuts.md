@@ -25,3 +25,10 @@
 - {} curly brackets, curly braces, braces, accolade (NL)
 - [] square brackets, brackets, rechte haakjes (NL)
 - () round brackets, parenthesis, ronde haakjes (NL)
+
+### Commits
+
+- git status
+- git add -A / git commit -a
+- git commit -m 'message'
+- git push
