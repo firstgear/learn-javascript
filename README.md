@@ -13,7 +13,7 @@
 | [Functions](01-js-basics.md#Functions)             | 65   | 15 Feb |
 |                   | 412  |             |
 
-## Object Oriented Programming in Javascript
+## [02 - Object Oriented Programming in Javascript](./02-js-oop.md)
 ## The complete Node.js Course
 ## Complete SQL Mastery
 ## Mastering React
