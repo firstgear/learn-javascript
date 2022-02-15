@@ -7,6 +7,16 @@ for(let n of numbers)
     sum += n;
 console.log(sum);
 
+// use array.reduce()
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+const initialValue = 0;
+const sumWithInitial = numbers.reduce(
+  (previousValue, currentValue) => previousValue + currentValue,
+  initialValue
+);
+console.log(sumWithInitial); // 5
+
+
 // same but using the reduce() method
 // a = 0, c = 1
 // a = 1, c = -1

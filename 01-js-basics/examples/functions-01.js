@@ -7,6 +7,7 @@ function walk(){
 let run = function(){
     console.log('run');
 }; // a function is an object
-let move = run;
 run();
+
+let move = run;
 move();

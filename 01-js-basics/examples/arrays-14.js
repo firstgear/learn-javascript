@@ -2,6 +2,7 @@
 
 const numbers = [1, -1, 2, 3];
 
+// pass callback function to filter
 const filtered = numbers.filter( function(value){
     return value >= 0;
 });

@@ -833,7 +833,7 @@ JS has automatic memory allocation, called garbage collection. No need to alloca
 
 ## Arrays
 
-### Adding Elements
+### 2. Adding Elements
 
 ```javascript
 const numbers = [3, 4];
@@ -848,7 +848,7 @@ console.log(numbers);
 // [1, 2, "a", "b", 3, 4, 5, 6]
 ```
 
-### Finding Elements (Primitives)
+### 3. Finding Elements (Primitives)
 
 ```javascript
 const numbers = [1, 2, 3, 1, 4];
@@ -862,7 +862,7 @@ console.log(numbers.indexOf(1) !== -1);//  true
 console.log(numbers.includes(1));      //  true
 ```
 
-### Finding Elements (Reference Types)
+### 4. Finding Elements (Reference Types)
 
 ```javascript
 const courses = [
@@ -886,7 +886,7 @@ const course2 = courses.findIndex( function(course) {
 console.log(course2); // 0
 ```
 
-### Arrow Functions
+### 5. Arrow Functions
 
 ```javascript
 // have to pass function, called predicate or callback function
@@ -906,7 +906,7 @@ const course3 = courses.find( course => course.name === 'a');
 console.log(course3); // { id ... } or undefined
 ```
 
-### Removing Elements
+### 6. Removing Elements
 
 ```javascript
 const numbers = [1,2,3,4];
@@ -916,7 +916,7 @@ const begin = numbers.shift() // remove first element
 numbers.splice(1,1); // remove 1 element starting on on index 1
 ```
 
-### Emptying an Array
+### 7. Emptying an Array
 
 ```javascript
 let numbers = [1, 2, 3, 4];
@@ -940,7 +940,7 @@ while (numbers.length>0)
 console.log(numbers);
 ```
 
-### Combining and Slicing Arrays
+### 8. Combining and Slicing Arrays
 
 ```javascript
 const first = [1, 2, 3];
@@ -957,7 +957,7 @@ firstN[0].id = 10;
 console.log(combinedN); //  [{id :10 }, 4, 5, 6]
 ```
 
-### The Spread Operator
+### 9. The Spread Operator
 
 ```javascript
 const first = [1, 2, 3];
@@ -967,13 +967,14 @@ const combined = [...first, ...second];
 console.log(combined); // [1, 2, 3, 4, 5, 6]
 ```
 
-### Iterating an Array
+### 10. Iterating an Array
 
 ```javascript
 const numbers = [1, 2, 3];
 for (let number of numbers)
     console.log(number);
 
+// forEach method that takes parameter number
 numbers.forEach( function(number){
     console.log(number);
 });
@@ -985,7 +986,7 @@ numbers.forEach(number => console.log(number));
 numbers.forEach((number, index) => console.log(index, number));
 ```
 
-### Joining Arrays
+### 11. Joining Arrays
 
 ```javascript
 const numbers = [1, 2, 3]; // array
@@ -995,80 +996,157 @@ console.log(joined);
 // similar split can create array from string
 ```
 
-### Sorting Arrays
+### 12. Sorting Arrays
 
 ```javascript
 const numbers = [2, 3, 1];
 numbers.sort();
 console.log(numbers); // [1, 2, 3]
+
+const courses = [
+    { id: 1, name: 'Node.js' },
+    { id: 2, name: 'JavaScript' }
+]
+
+courses.sort(function(a, b) {
+    // a < b => -1
+    // a > b =>  1
+    // a == b => 0
+    const nameA = a.name.toUpperCase();
+    const nameB = b.name.toLowerCase();
+
+    if (nameA < nameB) return -1;
+    if (nameA > nameB) return  1;
+    return 0;
+})
+
+courses.sort();
+console.log(courses);
 ```
 
-### Testing the Elements of an Array
+### 13. Testing the Elements of an Array
 
 Pass callback function to method array.some() or array.every().
 
-### Filtering an Array
+[0,1,2] => true
+
+### 14. Filtering an Array
 
 Pass callback function to method array.filter().
 
 eg. Yelp restaurant filter on "Open Now"
 
-### Mapping an Array
+[0,1,2] => [1, 2]
+
+### 15. Mapping an Array
 
 Pass callback function to method array.map() to map every element of array into something else.
 
 eg. html bullet points from array
 
-### Reducing an Array
+### 16. Reducing an Array
 
 Pass callback funtion to method array.reduce() including reduce algorithm using accumulator and currentValue.
 
 eg. sum of array
 
-### Exercise 1- Array from Range
-### Exercise 2- Includes
-### Exercise 3- Except
-### Exercise 4- Moving an Element
-### Exercise 5- Count Occurrences
-### Exercise 6- Get Max
-### Exercise 7- Movies
+### 17. Exercise 1- Array from Range
+### 18. Exercise 2- Includes
+### 19. Exercise 3- Except
+### 20. Exercise 4- Moving an Element
+### 21. Exercise 5- Count Occurrences
+### 22. Exercise 6- Get Max
+### 23. Exercise 7- Movies
 
 ## Functions
 
-### Function Declarations vs Expressions
+### 1. Function Declarations vs Expressions
 
 * Function Declaration
 * Anonymous Function Expression
 * Named Function Expression
 
-### Hoisting
+### 2. Hoisting
 
-Voving function declaration to top of the file happens automatically in JS for function declarations. Not for function expressions.
+Moving function declaration to top of the file happens automatically in JS for function declarations. Not for function expressions.
 
-### Arguments
+### 3. Arguments
 
 Use argument object inside function to use dynamic number of parameters.
 
-### The Rest Operator
+### 4. The Rest Operator
 
 Rest operator (...args) must be the last formal parameter and is NOT the spread operator used with arrays [...array].
 
-### Default Parameters
+### 5. Default Parameters
 
 Create default parameters with the OR (||) operator.
 
-### Getters and Setters
+### 6. Getters and Setters
 
+- Getters give you access to properties of objects.
+- Setters allow you to mutate properties.
 
+### 7. Try and Catch
 
-### Try and Catch
-### Local vs Global Scope
-### Let vs Var
-### The this Keyword
-### Changing this
+- Throwing an error is called an exception.
+- Catch exception, display error.
 
-### Exercise 1- Sum of Arguments
-### Exercise 2- Area of Circle
-### Exercise 3- Error Handling
-### Wrap Up
-### What's Next
+```javascript
+let name = true;
+const e = new Error('Value is not a string.');
+try{
+    if  (typeof(name) !== 'string')
+        throw e;
+}
+catch (e) {
+    console.log("Au secours!");
+}
+```
+
+- functions-07.js shows multiple error messages.
+
+### 8. Local vs Global Scope
+
+```javascript
+{
+    const message = 'hi';
+}
+console.log(message);
+// message is not defined
+
+for (let i=0; i < 5; i++){
+    console.log(i);
+}
+console.log(i);
+// i is not defined
+```
+
+### 9. Let vs Var
+
+- Avoid using var, because var is function-scoped
+- ES6 (ES2015): let, const => block-scoped
+
+```javascript
+var color = 'red';
+// added to window object, dangerous can override variable of other libraries
+
+let age = 30;
+// global object
+
+function sayHi () {}
+// window.sayHi, not best practise
+```
+
+### 10. The this Keyword
+
+This is referencing the object that is executing current function.
+- scope of method is within object
+- scope of function is global/window
+
+### 11. Changing this
+### 12. Exercise 1- Sum of Arguments
+### 13. Exercise 2- Area of Circle
+### 14. Exercise 3- Error Handling
+
+Done

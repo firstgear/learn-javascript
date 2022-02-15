@@ -9,6 +9,7 @@ const person = {
     firstName : 'Klaasje',
     lastName: 'Meijer',
     fullName() { 
+        // template literal with backticks (single quotes)
         return `${person.firstName} ${person.lastName}`;
     }
 };
@@ -30,5 +31,6 @@ const person2 = {
     }
 };
 
+// fullName is property, so can be accessed without fullName()
 person2.fullName = 'John Smith';
 console.log(person2);

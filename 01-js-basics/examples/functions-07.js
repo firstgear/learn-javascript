@@ -1,6 +1,5 @@
 // try and catch
 
-
 const person = {
     firstName : 'Klaasje',
     lastName: 'Meijer',

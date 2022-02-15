@@ -293,3 +293,28 @@ function sum(limit){
     let sum = 0;
     if (limit%3 || limit%5);
 }
+
+const numbers = [2, 3, 1];
+numbers.sort();
+console.log(numbers); // [1, 2, 3]
+
+const courses = [
+    { id: 1, name: 'Node.js' },
+    { id: 2, name: 'JavaScript' }
+]
+
+courses.sort(function(a, b) {
+    // a < b => -1
+    // a > b =>  1
+    // a == b => 0
+
+    const nameA = a.name.toUpperCase();
+    const nameB = b.name.toLowerCase();
+
+    if (nameA < nameB) return -1;
+    if (nameA > nameB) return  1;
+    return 0;
+})
+
+courses.sort();
+console.log(courses);
