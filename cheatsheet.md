@@ -10,6 +10,10 @@
 - Preview markdown Command + Shift + V
 - Preview markdown split view Command K + V
 
+### Markdown
+
+- [Mermaid diagrams](https://mermaid-js.github.io/mermaid/#/)
+
 ### Chrome
 
 - Right click > Inspect > Console

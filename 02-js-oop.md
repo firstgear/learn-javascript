@@ -2,17 +2,202 @@
 
 ## Getting Started
 ### 1. What is OOP
+
+- a programming style that is centered around objects and functions
+- around since the 70ies
+- C#, Java, Ruby, Python, Javascript
+
 ### 2. Four Pillars of OOP
-### 3. Setting Up the Development Environment
-### 4. Course Structure
-### 5. Follow Me Around
-### 6. Learning Paths
+
+Before OOP, Procedural programming
+- programs contain functions
+- often you have to copy functions manually
+- creates a lot of interdependancies, called spaghetti code
+
+OOP unit is object
+- variables called properties
+- functions called methods
+
+```mermaid
+classDiagram
+class Car {
+    start()
+    stop()
+    move()
+    brand
+    model
+    color }
+class localStorage {
+    removeItem()
+    setItem()
+    move()
+    length }
+```
+
+eg. localStorage object in browser
+- methods like removeItem, setItem
+- properties like length
+
+4 core concepts in OOP
+1. encapsulation
+2. abstraction
+3. inheritance
+4. polymorphism
+
+#### Benefits of OOP
+1. encapsulation
+    - group related variables and functions
+    - reduce complexity and increase reusability
+2. abstraction
+    - reduces complexity and isolate impact of changes
+3. inheritance
+    - eliminate redundant code
+4. polymorphism
+    - refactor ugly switch/case statements
+
+#### 1. Encapsulation
+
+- Variables can be modeled as properties of an object, instead of parameter of function.
+- "The best functions are those with no parameters!", Uncle Bob - Robert C Martin, author of Clean Code
+
+```javascript
+// procedural implementation
+// underscore used as numeric separator
+let baseSalary = 30_000;
+let overtime = 10;
+let rate = 20;
+
+function getWage(baseSalary, overtime, rate){ // functions with lots of parameters
+    return baseSalary + (overtime * rate)
+}
+console.log(getWage(baseSalary, overtime, rate));
+
+// OOP alternative
+// create employee object
+let employee = {
+    baseSalary: 30_000, // modeled as properties of object
+    overtime: 10,
+    rate: 20,
+    getWage: function(){  // getWage no parameters
+        return this.baseSalary + (this.overtime * this.rate)
+    }
+};
+console.log(employee.getWage());
+```
+
+#### 2. Abstraction
+
+- example DVD player, simple buttons PREV, NEXT, PLAY, STOP, internal complexity hidden
+
+Benefits
+- simpler interface
+- reduce the impact of change (eg. change private method, none of these changes will leak to the outside)
+
+#### 3. Inheritance
+
+- mechanism to eliminate redundant code
+- eg. TextBox, Select, CheckBox
+
+```mermaid
+classDiagram
+class Object {
+    click()
+    focus()
+    hidden
+    innerHTML }
+```
+
+#### 4. Polymorphism
+
+- get rid of lots of switch, case code and implement render method in objects
+
+```javascript
+switch(element.type){
+    case 'select': renderSelect();
+    case 'text': renderTextBox();
+    case 'checkbox': renderCheckBox();
+}
+
+// versus one line of code
+element.render();
+```
 
 ## Objects
 ### 1. Introduction
+
+- creating objects
+- factories and constructors
+- primitives and reference types
+- working with properties
+- getters / setters
+
+Define object as
+- object literal {}
+- factories
+- constructors
+
 ### 2. Object Literals
+
+- use const, let
+- don't use var
+- not a good way to duplicate objects
+
+```javascript
+// object literal syntax {}
+const circle = {
+    radius: 1,
+    location: {
+        x: 1,
+        y: 1
+    },
+    draw: function(){
+        console.log('draw')l
+    }
+};
+```
+
 ### 3. Factories
+
+- returns object
+- no need to use new operator
+
+```javascript
+// Factory Function
+function createCircle(radius){
+    return {
+        radius: radius,
+        draw: function(){
+            console.log('draw');
+        }
+    };
+}
+const circle2 = createCircle(1);
+circle2.draw();
+```
+
 ### 4. Constructors
+
+- "this" keyword along with "new" keyword
+- similar to creating instance of class (C## / Java)
+
+```javascript
+// Constructor Function
+// first letter uppercase
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    }
+    // implicit return statement
+}
+// new operator will 
+// - create empty object
+// - this points to objects
+// - returns object
+const another = new Circle(1);
+another.draw();
+```
+
 ### 5. Constructor Property
 ### 6. Functions are Objects
 ### 7. Value vs Reference Types

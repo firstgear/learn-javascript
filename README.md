@@ -2,18 +2,27 @@
 
 ## [01 - JavaScript Basics](./01-js-basics.md)
 
-|                   | Min  | Done   |
-|-------------------|------|--------|
-| [Getting Started](01-js-basics.md#Getting-Started) | 17   | 12 may |
-| [Basics](01-js-basics.md#Basics)                   | 40   | 13 may |
-| [Operators](01-js-basics.md#Operators)             | 35   | 14 may |
-| [Control Flow](01-js-basics.md#Control-Flow)       | 85   | 26 may |
-| [Objects](01-js-basics.md#Objects)                 | 80   | 31 dec |
-| [Arrays](01-js-basics.md#Arrays)                   | 90   | 3 jan  | 
-| [Functions](01-js-basics.md#Functions)             | 65   | 15 Feb |
+|                   |   Done   |
+|-------------------|----------|
+| [Getting Started](01-js-basics.md#Getting-Started) | 12 may |
+| [Basics](01-js-basics.md#Basics)                   | 13 may |
+| [Operators](01-js-basics.md#Operators)             | 14 may |
+| [Control Flow](01-js-basics.md#Control-Flow)       | 26 may |
+| [Objects](01-js-basics.md#Objects)                 | 31 dec |
+| [Arrays](01-js-basics.md#Arrays)                   |  3 jan | 
+| [Functions](01-js-basics.md#Functions)             | 15 Feb |
 |                   | 412  |             |
 
 ## [02 - Object Oriented Programming in Javascript](./02-js-oop.md)
+
+|                   |  Done   |
+|-------------------|---------|
+| Getting Started           | date |
+| Objects                   | date |
+| Prototypes                | date |
+| Prototypical Inheritance  | date |
+| ES6 Tooling               | date |
+
 ## The complete Node.js Course
 ## Complete SQL Mastery
 ## Mastering React
