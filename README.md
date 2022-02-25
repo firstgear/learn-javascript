@@ -18,7 +18,7 @@
 |                   |  Done   |
 |-------------------|---------|
 | Getting Started           | 16 Feb |
-| Objects                   | date |
+| Objects                   | 25 Feb |
 | Prototypes                | date |
 | Prototypical Inheritance  | date |
 | ES6 Tooling               | date |
