@@ -17,8 +17,8 @@
 
 |                   |  Done   |
 |-------------------|---------|
-| Getting Started           | 16 Feb |
-| Objects                   | 25 Feb |
+| [Getting Started](02-js-oop.md#Getting-Started) | 16 Feb |
+| [Objects](02-js-oop.md#Objects)                 | 25 Feb |
 | Prototypes                | date |
 | Prototypical Inheritance  | date |
 | ES6 Tooling               | date |
