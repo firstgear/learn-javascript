@@ -138,6 +138,7 @@ Define object as
 
 ### 2. Object Literals
 
+- simplest way to create an object
 - use const, let
 - don't use var
 - not a good way to duplicate objects
@@ -158,6 +159,7 @@ const circle = {
 
 ### 3. Factories
 
+- create multiple objects with the same structure and behavior
 - returns object
 - no need to use new operator
 
@@ -177,6 +179,7 @@ circle2.draw();
 
 ### 4. Constructors
 
+- create multiple objects with the same structure and behavior
 - "this" keyword along with "new" keyword
 - similar to creating instance of class (C## / Java)
 
@@ -199,16 +202,74 @@ another.draw();
 ```
 
 ### 5. Constructor Property
+
+- every object has constructor property which returns function used to create that object
+
+```javascript
+// mostly we use the literals such as on the right
+new Object(); // '', "", ``
+new Boolean(); // true, false
+new Number(); // 1, 2, 3, ...
+```
+
 ### 6. Functions are Objects
+
+See objects-06.js
+
 ### 7. Value vs Reference Types
+
+Value Types (Primitives)
+- Number
+- String
+- Boolean
+- Symbol
+- undefined
+- null
+
+Reference Types (Objects)
+- Object
+- Function
+- Array
+
+Conclusion
+- Primitives are copies by their value
+- Objects are copies by their reference
+
 ### 8. Adding or Removing Properties
+
+- Objects are dynamic, after creation you can create/delete properties.
+
+```javascript
+// user.token = 'asdasdsd';
+```
+
 ### 9. Enumerating Properties
+
+- enumerate all members in object for...in loop
+- get all the keys via Object.keys(object)
+- "in" operator checks existence of method / property
+
 ### 10. Abstraction
+
+- hide the details
+- expose/show only essentials
+- eg. DVD player only few buttons on the outside
+- not everything in your objects should be public
+
 ### 11. Private Properties and Methods
+
+- closure concept: have access to variables within the inner function
+- define let instead of this... (property)
+
 ### 12. Getters and Setters
+
+- to define a getter/setter, use Object.defineProperty
+
 ### 13. Cheat Sheet
-### 14. Exercise Stopwatch
-### 15. Solution Stopwatch
+
+- see examples/objects.js
+
+### 14. [Exercise Stopwatch](./02-js-oop/exercises/objects-14.js)
 
 ## Prototypes
 ### 1. Inheritance

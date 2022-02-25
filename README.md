@@ -17,7 +17,7 @@
 
 |                   |  Done   |
 |-------------------|---------|
-| Getting Started           | date |
+| Getting Started           | 16 Feb |
 | Objects                   | date |
 | Prototypes                | date |
 | Prototypical Inheritance  | date |
